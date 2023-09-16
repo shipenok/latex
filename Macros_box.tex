@@ -1,0 +1,346 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\mycomment}[1]{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parindent}{1cm}
+
+\newcommand{\boxi}[4]{%
+\newtcbtheorem[auto counter, number within = chapter]
+{#1}{#2}{%                                                        
+  breakable,
+  fonttitle = \bfseries,
+  colframe = #3,
+  colback = #4
+}{th}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\boxii}[4]{%
+\tcbuselibrary{theorems,skins,hooks}
+\newtcbtheorem[number within=chapter]{#1}{#2}
+{%
+	enhanced,
+	breakable,
+	colback = #3,
+	frame hidden,
+	boxrule = 0sp,
+	borderline west = {2pt}{0pt}{#4},
+	sharp corners,
+	detach title,
+	before upper = \tcbtitle\par\smallskip,
+	coltitle = #4,
+	fonttitle = \bfseries\sffamily,
+	description font = \mdseries,
+	separator sign none,
+	segmentation style={solid, #4},
+}
+{qt}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\boxiii}[4]{%
+\newtcbtheorem[number within=chapter]{#1}{#2}
+{%
+	colback = #3
+	,breakable
+	,colframe = #4
+	,coltitle = #4
+	,boxrule = 1pt
+	,sharp corners
+	,detach title
+	,before upper=\tcbtitle\par\smallskip
+	,fonttitle = \bfseries
+	,description font = \mdseries
+	,separator sign none
+	,description delimiters parenthesis
+}
+{ex}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{varwidth}
+%
+\newcommand{\boxiv}[6]{
+\newtcbtheorem[number within=chapter]{#1}{#2}{enhanced,
+	before skip=2mm,after skip=2mm, 
+	colback=#3,
+	colframe=#4,
+	boxrule=0.5mm,
+	attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight}, varwidth boxed title*=-3cm,
+	boxed title style={frame code={
+					\path[fill=tcbcolback]
+					([yshift=-1mm,xshift=-1mm]frame.north west)
+					arc[start angle=0,end angle=180,radius=1mm]
+					([yshift=-1mm,xshift=1mm]frame.north east)
+					arc[start angle=180,end angle=0,radius=1mm];
+					\path[left color=#5,right color=#5,
+						middle color=#6]
+					([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+					[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+					-- (frame.south east) -- (frame.south west)
+					-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+					[sharp corners]-- cycle;
+				},interior engine=empty,
+		},
+	fonttitle=\bfseries,
+	%title={#2},#1
+	}{def}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\boxv}[4]{%
+\newtcbtheorem{#1}{#2}{enhanced,
+	breakable,
+	colback=#3,
+	colframe=#4,
+	attach boxed title to top left={yshift*=-\tcboxedtitleheight},
+	fonttitle=\bfseries,
+	%title={#2},
+	boxed title size=title,
+	boxed title style={%
+			sharp corners,
+			rounded corners=northwest,
+			colback=tcbcolframe,
+			boxrule=0pt,
+		},
+	underlay boxed title={%
+			\path[fill=tcbcolframe] (title.south west)--(title.south east)
+			to[out=0, in=180] ([xshift=5mm]title.east)--
+			(title.center-|frame.east)
+			[rounded corners=\kvtcb@arc] |-
+			(frame.north) -| cycle;
+		},
+	%#1
+}{tn}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\boxvi}[4]{%
+\newtcbtheorem[number within=chapter]{#1}{#2}{
+	breakable,
+	enhanced,
+	colback=#3,
+	colframe=#4,
+	arc=0pt,
+	outer arc=0pt,
+	fonttitle=\bfseries\sffamily,
+	colbacktitle=#4,
+	attach boxed title to top left={},
+	boxed title style={
+			enhanced,
+			skin=enhancedfirst jigsaw,
+			arc=3pt,
+			bottom=0pt,
+			interior style={fill=#4}
+		},
+	%#1
+}{str}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\boxvii}[7]{%
+\usetikzlibrary{arrows,calc,shadows.blur}
+\tcbuselibrary{skins}
+\newtcolorbox{#1}[1][]{%
+	enhanced jigsaw,
+	colback=#3,%
+	colframe=#4,
+	size=small,
+	boxrule=1pt,
+	title=\textbf{#2:},
+	halign title=flush center,
+	coltitle=black,
+	breakable,
+	drop shadow=#5,
+	attach boxed title to top left={xshift=1cm,yshift=-\tcboxedtitleheight/2,yshifttext=-\tcboxedtitleheight/2},
+	minipage boxed title=#6,
+	boxed title style={%
+			colback=#7,
+			size=fbox,
+			boxrule=1pt,
+			boxsep=2pt,
+			underlay={%
+					\coordinate (dotA) at ($(interior.west) + (-0.5pt,0)$);
+					\coordinate (dotB) at ($(interior.east) + (0.5pt,0)$);
+					\begin{scope}
+						\clip (interior.north west) rectangle ([xshift=3ex]interior.east);
+						\filldraw [white, blur shadow={shadow opacity=60, shadow yshift=-.75ex}, rounded corners=2pt] (interior.north west) rectangle (interior.south east);
+					\end{scope}
+					\begin{scope}[#4]
+						\fill (dotA) circle (2pt);
+						\fill (dotB) circle (2pt);
+					\end{scope}
+				},
+		},
+	%#1,
+}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\boxviii}[2]{\setlength{\parindent}{0cm}\textbf{\textit{#1.}\\}\setlength{\parindent}{1cm}\begin{small}
+#2
+\end{small}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\boxii{Theorem}{Теорема}{mylenmabg}{mylenmafr}
+\newcommand{\thm}[3]{\begin{Theorem}{#1}{#3}#2\end{Theorem}}
+\crefformat{tcb@cnt@Theorem}{~#2#1#3}
+% 
+\boxii{Proposition}{Предложение}{mylenmabg}{mylenmafr}
+\newcommand{\mprop}[3]{\begin{Proposition}{#1}{#3}#2\end{Proposition}}
+\crefformat{tcb@cnt@Proposition}{~#2#1#3}
+% 
+\boxii{Lemma}{Лемма}{mylenmabg}{mylenmafr}
+\newcommand{\lemma}[3]{\begin{Lemma}{#1}{#3}#2\end{Lemma}}
+\crefformat{tcb@cnt@Lemma}{~#2#1#3}
+% 
+\boxii{Corollary}{Следствие}{mylenmabg}{mylenmafr}
+\newcommand{\mcor}[3]{\begin{Corollary}{#1}{#3}#2\end{Corollary}}
+\crefformat{tcb@cnt@Corollary}{~#2#1#3}
+% 
+\boxii{Claim}{Утверждение}{mylenmabg}{mylenmafr}
+\newcommand{\clm}[3]{\begin{Claim}{#1}{#3}#2\end{Claim}}
+\crefformat{tcb@cnt@Claim}{~#2#1#3}
+% 
+\boxii{Definition}{Определение}{myg!10}{myg}
+\newcommand{\dfn}[3]{\begin{Definition}{#1}{#3}#2\end{Definition}}
+\crefformat{tcb@cnt@Definition}{~#2#1#3}
+%
+\boxii{Example}{Пример}{mytheorembg}{mytheoremfr}
+\newcommand{\exmpl}[3]{\begin{Example}{#1}{#3}#2\end{Example}}
+\crefformat{tcb@cnt@Example}{~#2#1#3}
+%
+\boxii{Exercise}{Упражнение}{red!5}{red!80!black}
+\newcommand{\exsz}[3]{\begin{Exercise}{#1}{#3}#2\end{Exercise}}
+\crefformat{tcb@cnt@Exercise}{~#2#1#3}
+% 
+\boxii{Note}{Замечание}{yellow!20!white}{yellow!80!black}
+\newcommand{\nt}[3]{\begin{Note}{#1}{#3}#2\end{Note}}
+\crefformat{tcb@cnt@Note}{~#2#1#3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\solve}[1]{\boxviii{Решение}{#1}}
+\newcommand{\prooff}[1]{\boxviii{Доказательство}{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\mycomment{
+\boxi{ThRule}{Правило}{mylenmafr}{mylenmabg}
+\newcommand{\mrul}[3]{\begin{ThRule}{#1}{#3}#2\end{ThRule}}
+\crefformat{tcb@cnt@ThRule}{~#2#1#3}
+%
+%
+\boxi{WConc}{Неправильная концепция}{myr}{white}%
+\newcommand{\wc}[3]{\begin{WConc}{#1}{#3}#2\end{WConc}}
+\crefformat{tcb@cnt@WConc}{~#2#1#3}
+%
+%
+\boxi{Hypothesis}{Гипотеза}{blue!75!black}{blue!10}
+\newcommand{\mhyp}[3]{\begin{Hypothesis}{#1}{#3}#2\end{Hypothesis}}
+\crefformat{tcb@cnt@Hypothesis}{~#2#1#3}
+%
+%
+\boxi{Explanation}{Объяснение}{myg}{myg!10}%
+\newcommand{\mexpln}[3]{\begin{Explanation}{#1}{#3}#2\end{Explanation}}
+\crefformat{tcb@cnt@Explanation}{~#2#1#3}
+%
+%%
+%
+\boxii{Citatai}{Цитата}{mytheorembg}{mytheoremfr}
+\newcommand{\citi}[3]{\begin{Citatai}{#1}{#3}#2\end{Citatai}}
+\crefformat{tcb@cnt@Citatai}{~#2#1#3}
+%
+\boxii{Citataii}{Цитата преподавателя}{mylenmabg}{mylenmafr}
+\newcommand{\citii}[3]{\begin{Citataii}{#1}{#3}#2\end{Citataii}}
+\crefformat{tcb@cnt@Citataii}{~#2#1#3}
+%
+\boxii{Citataiii}{Сильная мысль}{myg!10}{myg}%
+\newcommand{\citiii}[3]{\begin{Citataiii}{#1}{#3}#2\end{Citataiii}}
+\crefformat{tcb@cnt@Citataiii}{~#2#1#3}
+%
+%%
+%
+\boxiii{Example}{Пример}{myexamplebg}{myg}
+\newcommand{\exmpl}[3]{\begin{Example}{#1}{#3}#2\end{Example}}
+\crefformat{tcb@cnt@Example}{~#2#1#3}
+%
+\boxiii{Exercise}{Упражнение}{red!5}{red!80!black}
+\newcommand{\exsz}[3]{\begin{Exercise}{#1}{#3}#2\end{Exercise}}
+\crefformat{tcb@cnt@Exercise}{~#2#1#3}
+%
+%%
+%
+\boxiv{Definition}{Определение}{red!5}{red!80!black}{tcbcolback!60!black}{tcbcolback!80!black}
+\newcommand{\dfn}[3]{\begin{Definition}[colbacktitle=red!75!black]{#1}{#3}#2\end{Definition}}
+\crefformat{tcb@cnt@Definition}{~#2#1#3}
+%
+\boxiv{Axiom}{Аксиома}{yellow!5}{yellow!80!black}{tcbcolback!60!black}{tcbcolback!80!black}
+\newcommand{\axm}[3]{\begin{Axiom}[colbacktitle=yellow!75!black]{#1}{#3}#2\end{Axiom}}
+\crefformat{tcb@cnt@Axiom}{~#2#1#3}
+%
+\boxiv{Postulate}{Постулат}{blue!5}{blue!80!black}{tcbcolback!60!black}{tcbcolback!80!black}
+\newcommand{\pstlt}[3]{\begin{Postulate}[colbacktitle=blue!75!black]{#1}{#3}#2\end{Postulate}}
+\crefformat{tcb@cnt@Postulate}{~#2#1#3}
+%
+%%
+%
+\boxv{Question}{Вопрос}{white}{mygr}
+\newcommand{\qstn}[3]{\begin{Question}{#1}{#3}#2\end{Question}}
+\crefformat{tcb@cnt@Question}{~#2#1#3}
+%
+\boxv{Solution}{Ответ}{white}{myg!80!black}
+\newcommand{\sltn}[3]{\begin{Solution}{#1}{#3}#2\end{Solution}}
+\crefformat{tcb@cnt@Solution}{~#2#1#3}
+%
+\boxv{Formulation}{Постановка задачи}{white}{myb!80!black}
+\newcommand{\fmltn}[3]{\begin{Formulation}{#1}{#3}#2\end{Formulation}}
+\crefformat{tcb@cnt@Formulation}{~#2#1#3}
+%
+%%
+%
+\boxvi{History}{История}{mytheorembg}{mytheoremfr}
+\newcommand{\hstr}[3]{\begin{History}{#1}{#3}#2\end{History}}
+\crefformat{tcb@cnt@History}{~#2#1#3}
+%
+\boxvi{Story}{Поучительная история}{red!25!green!20!blue!5}{green!80!blue}
+\newcommand{\lstr}[3]{\begin{Story}{#1}{#3}#2\end{Story}}
+\crefformat{tcb@cnt@Story}{~#2#1#3}
+%
+%%
+%
+\boxvii{Indication}{Указание}{yellow!20!white}{yellow!80!black}{black!50!white}{3.5cm}{white}
+\newcommand{\ukaz}[1]{\begin{Indication}#1\end{Indication}}
+%
+\boxvii{Discussion}{Обсуждение результатов}{gray!20!white}{gray!80!black}{black!50!white}{7.5cm}{white}
+\newcommand{\disc}[1]{\begin{Discussion}#1\end{Discussion}}
+%
+\boxvii{Note}{Замечание}{red!20!white}{red!80!black}{black!50!white}{3.5cm}{white}
+\newcommand{\nt}[1]{\begin{Note}#1\end{Note}}
+%
+\newcommand{\solve}[1]{\boxviii{Решение}{#1}}
+\newcommand{\prooff}[1]{\boxviii{Доказательство}{#1}}
+}
+%%%%%%%%%%%%%%%
+\newtcbtheorem{Titul}{Конспект лекций}{enhanced,
+	before skip=2mm,after skip=2mm, 
+	colback=black!5,
+	colframe=black!80,
+	boxrule=0.5mm,
+	attach boxed title to top left={xshift=5cm,yshift*=1mm-\tcboxedtitleheight}, varwidth boxed title*=0cm,
+	boxed title style={frame code={
+					\path[fill=tcbcolback]
+					([yshift=-1mm,xshift=-1mm]frame.north west)
+					arc[start angle=0,end angle=180,radius=1mm]
+					([yshift=-1mm,xshift=1mm]frame.north east)
+					arc[start angle=180,end angle=0,radius=1mm];
+					\path[left color=tcbcolback!60!black,right color=tcbcolback!60!black,
+						middle color=tcbcolback!80!black]
+					([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+					[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+					-- (frame.south east) -- (frame.south west)
+					-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+					[sharp corners]-- cycle;
+				},interior engine=empty,
+		},
+	fonttitle=\bfseries,
+	%title={#2},#1
+	}{def}
+	%
+	
+%%%
+%\boxiv{Definition}{Определение}{black!5}{black!80}{tcbcolback!60!black}{tcbcolback!80!black}
+\newcommand{\titulniki}[2]{\begin{Titul}[colbacktitle=black!75]{#1}{}#2\end{Titul}}
+%\crefformat{tcb@cnt@Titul}{~#2#1#3}
+%
