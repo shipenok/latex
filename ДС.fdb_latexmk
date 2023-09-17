@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1694602095 "/Users/andrejsipenok/Desktop/латех/ДС.tex" "ДС.pdf" "ДС" 1694602096 0
-  "/Users/andrejsipenok/Desktop/латех/ДС.tex" 1694105171 505 9360651de86dd1d959a41614268033ad ""
+["pdflatex"] 1694964816 "/Users/andrejsipenok/Desktop/LaTeX/ДС.tex" "ДС.pdf" "ДС" 1694964817 0
+  "/Users/andrejsipenok/Desktop/LaTeX/ДС.tex" 1694105171 505 9360651de86dd1d959a41614268033ad ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1692953417 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1693776443 3308 eee81981029f67083258db36df06e523 ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1692954205 3304 6a543c07045572737981351171e0505e ""
@@ -15,6 +15,7 @@
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm2488.tfm" 1692954192 3264 102508a989355317d27912fb22a38399 ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/lass1000.tfm" 1693919394 3280 79b5498dcd025b1b32077bec7ffe4b2e ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/lasx1000.tfm" 1693919392 3264 e380de69789cce7d50e7843a276281f8 ""
+  "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/lati1000.tfm" 1692953415 3528 defd551e32c4af414f9b54b8101bfa9b ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1136849721 3141 82d5616418ed8d5de703b3951bedecb4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -46,6 +47,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1215737283 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb" 1215737283 94269 4665f0d253cc3cca9439f89dbf2b9f33 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb" 1215737283 149078 1f78530235f7e16c583e4692f7af72b1 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb" 1215737283 186554 e8f0fa8ca05e038f257a06405232745f ""
   "/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/babel-russian/russianb.ldf" 1610315728 27193 cd3440b122aaa8e30416378ef38b3173 ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/babel/babel.sty" 1676321701 151363 1f5971af3ef874d432e8fb43e0edb71d ""
@@ -200,13 +202,13 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1692951336 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1692951009 7883452 33dcc6dc8a1aba69946778e11e4d1d95 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Macros_box.tex" 1694096736 11393 83e4f20d0a6342f2a2f91aead653f458 ""
+  "Macros_box.tex" 1694964017 11410 862cf0b1de3c7fce044d19bb1a5e0ae6 ""
   "lec_1.tex" 1694602095 7153 783a1f5bbab5bcb80804c8ae989aa4d4 ""
-  "lec_2.tex" 1694105171 34 fbed17eb302b06354dce336b11478aad ""
+  "lec_2.tex" 1694964816 5101 e920747fcab7f9680c34b9c8fc381986 ""
   "macros_graphics.tex" 1694028526 1162 43cf02e277d04656356b995db933db57 ""
-  "ДС.aux" 1694602096 1672 4046998936110f6b80c2aba13fe30c52 "pdflatex"
+  "ДС.aux" 1694964817 2438 d8b076f0ed3ff4af7c33977fa49b099a "pdflatex"
   "ДС.tex" 1694105171 505 9360651de86dd1d959a41614268033ad ""
-  "ДС.toc" 1694602096 1049 893ca5c6b6c580f78e288e62dae46565 "pdflatex"
+  "ДС.toc" 1694964817 1651 c341975658e3b50c5d6e818e90f273b6 "pdflatex"
   (generated)
   "ДС.aux"
   "ДС.log"
