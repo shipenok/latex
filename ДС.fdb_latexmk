@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1695403953 "/Users/andrejsipenok/Desktop/LaTeX/ДС.tex" "ДС.pdf" "ДС" 1695403955 0
+["pdflatex"] 1695718841 "/Users/andrejsipenok/Desktop/LaTeX/ДС.tex" "ДС.pdf" "ДС" 1695718843 0
   "/Users/andrejsipenok/Desktop/LaTeX/ДС.tex" 1695392340 519 744beb7c9008fb1d4db027e1fbfb0cac ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1692953417 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1693776443 3308 eee81981029f67083258db36df06e523 ""
@@ -15,6 +15,8 @@
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm2488.tfm" 1692954192 3264 102508a989355317d27912fb22a38399 ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/lass1000.tfm" 1693919394 3280 79b5498dcd025b1b32077bec7ffe4b2e ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/lasx1000.tfm" 1693919392 3264 e380de69789cce7d50e7843a276281f8 ""
+  "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/lati0500.tfm" 1693941917 3528 95fb883c7ede403a66470f96d8d2f1a4 ""
+  "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/lati0700.tfm" 1693919397 3528 15a6f610d0057e691178d31f3f277358 ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/lati1000.tfm" 1692953415 3528 defd551e32c4af414f9b54b8101bfa9b ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1136849721 3141 82d5616418ed8d5de703b3951bedecb4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -254,12 +256,12 @@
   "Macros_box.tex" 1694964017 11410 862cf0b1de3c7fce044d19bb1a5e0ae6 ""
   "lec_1.tex" 1694602095 7153 783a1f5bbab5bcb80804c8ae989aa4d4 ""
   "lec_2.tex" 1695394182 5200 c3d9645efd8a22af9e75d1f09ad6604f ""
-  "lec_3.tex" 1695403953 6747 0991e7986acd269bf432cbfb41c38c1f ""
+  "lec_3.tex" 1695718841 11839 ea4755e8323a20c987f955312084ddd7 ""
   "macros_graphics.tex" 1695123263 1206 6a74a8665f86861fe1e4c4f7d7e75e9b ""
   "ris1.png" 1695135206 276129 632e2a73d93795d3b5ba3093075f65cc ""
-  "ДС.aux" 1695403955 2812 e886ff65f07a278fd29460e91481f33e "pdflatex"
+  "ДС.aux" 1695718843 2813 f23ed510251b6cc99dc1238a23164128 "pdflatex"
   "ДС.tex" 1695392340 519 744beb7c9008fb1d4db027e1fbfb0cac ""
-  "ДС.toc" 1695403955 1867 1834952ce7154f0a0f4aef0333262796 "pdflatex"
+  "ДС.toc" 1695718843 1867 1834952ce7154f0a0f4aef0333262796 "pdflatex"
   (generated)
   "ДС.aux"
   "ДС.log"
