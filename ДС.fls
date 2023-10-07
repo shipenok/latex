@@ -995,6 +995,13 @@ INPUT ./lec_3.tex
 INPUT lec_3.tex
 INPUT /Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/lati0700.tfm
 INPUT /Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/lati0500.tfm
+INPUT ./lec_4.tex
+INPUT ./lec_4.tex
+INPUT ./lec_4.tex
+INPUT lec_4.tex
+INPUT ./lec_4.tex
+INPUT ./lec_4.tex
+INPUT lec_4.tex
 INPUT ДС.aux
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

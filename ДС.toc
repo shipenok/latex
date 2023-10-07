@@ -14,3 +14,6 @@
 \contentsline {section}{\numberline {2.3}Периодические орбиты любых периодов}{7}{}%
 \contentsline {chapter}{\numberline {3}Общие понятия теории динамических систем.}{8}{}%
 \contentsline {section}{\numberline {3.1}Инвариантные множества}{8}{}%
+\contentsline {chapter}{\numberline {4}Продолжение предыдущей лекции. Топологическая классификация. Устойчивость.}{12}{}%
+\contentsline {section}{\numberline {4.1}Продолжение предыдущей лекции.}{12}{}%
+\contentsline {section}{\numberline {4.2}Топологическая классификация. Устойчивость.}{13}{}%
