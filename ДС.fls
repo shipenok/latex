@@ -1002,6 +1002,13 @@ INPUT lec_4.tex
 INPUT ./lec_4.tex
 INPUT ./lec_4.tex
 INPUT lec_4.tex
+INPUT ./lec_5.tex
+INPUT ./lec_5.tex
+INPUT ./lec_5.tex
+INPUT lec_5.tex
+INPUT ./lec_5.tex
+INPUT ./lec_5.tex
+INPUT lec_5.tex
 INPUT ДС.aux
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

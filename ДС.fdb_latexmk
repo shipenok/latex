@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1696693202 "/Users/andrejsipenok/Desktop/LaTeX/ДС.tex" "ДС.pdf" "ДС" 1696693203 0
-  "/Users/andrejsipenok/Desktop/LaTeX/ДС.tex" 1696587335 533 243fa9ebdcaa11d241af53f9b17b0667 ""
+["pdflatex"] 1696789884 "/Users/andrejsipenok/Desktop/LaTeX/ДС.tex" "ДС.pdf" "ДС" 1696789886 0
+  "/Users/andrejsipenok/Desktop/LaTeX/ДС.tex" 1696781033 547 4fb46342220647a4aa34ccc953ba6fea ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1692953417 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1693776443 3308 eee81981029f67083258db36df06e523 ""
   "/Users/andrejsipenok/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1692954205 3304 6a543c07045572737981351171e0505e ""
@@ -258,11 +258,12 @@
   "lec_2.tex" 1695394182 5200 c3d9645efd8a22af9e75d1f09ad6604f ""
   "lec_3.tex" 1695723641 12262 3d9fea3acfe86e0539fc612ed13f3159 ""
   "lec_4.tex" 1696693202 10678 5e34919422b741c780788dd4aec12b9e ""
+  "lec_5.tex" 1696789884 13904 d6ad9324874bf07d6433051f2c4039a7 ""
   "macros_graphics.tex" 1695123263 1206 6a74a8665f86861fe1e4c4f7d7e75e9b ""
   "ris1.png" 1695135206 276129 632e2a73d93795d3b5ba3093075f65cc ""
-  "ДС.aux" 1696693203 3439 6c0f12d1ea9b24572ec6848ec9d2d13e "pdflatex"
-  "ДС.tex" 1696587335 533 243fa9ebdcaa11d241af53f9b17b0667 ""
-  "ДС.toc" 1696693203 2294 9b3f83c640b9e396f72c09c04ebf155f "pdflatex"
+  "ДС.aux" 1696789886 3936 61c9668557a53acac48595f596081869 "pdflatex"
+  "ДС.tex" 1696781033 547 4fb46342220647a4aa34ccc953ba6fea ""
+  "ДС.toc" 1696789886 2592 c4cbfabe7beb5bec1e2a76f09e1833d8 "pdflatex"
   (generated)
   "ДС.aux"
   "ДС.log"

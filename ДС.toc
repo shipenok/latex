@@ -17,3 +17,6 @@
 \contentsline {chapter}{\numberline {4}Продолжение предыдущей лекции. Топологическая классификация. Устойчивость.}{12}{}%
 \contentsline {section}{\numberline {4.1}Продолжение предыдущей лекции.}{12}{}%
 \contentsline {section}{\numberline {4.2}Топологическая классификация. Устойчивость.}{13}{}%
+\contentsline {chapter}{\numberline {5}Гиперболичность. Простейшие гиперболические множества.}{15}{}%
+\contentsline {section}{\numberline {5.1}Cлучай каскада.}{15}{}%
+\contentsline {section}{\numberline {5.2}Для потока.}{16}{}%
